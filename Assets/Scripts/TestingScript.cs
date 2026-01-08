@@ -1,9 +1,27 @@
+
 using UnityEngine;
 
-public class TestgingScript : MonoBehaviour
+public class TestingScript : MonoBehaviour
+
 {
-    void OnGUI()
+
+  
+
+    int number = 1;
+
+    int[] numbers = new int[3];
+
+    void Start()
+
     {
-        GUI.Label(new Rect(10, 10, 300, 30), "SCRIPT CALISIYOR");
+        numbers[0] = 5;
+        numbers[1] = 8;
+        numbers[2] = 11;
+
+        for( int i = 0;  i < numbers.Length; i++ )
+    {
+        Debug.Log(numbers[i]); 
     }
+
+}
 }
