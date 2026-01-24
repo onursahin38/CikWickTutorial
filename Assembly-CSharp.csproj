@@ -66,10 +66,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_GameAssets\Scripts\Audio\Sound.cs" />
-    <Compile Include="Assets\_GameAssets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\GamePlay\Player\PlayerController.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Enums\SoundType.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Audio\BackgroundMusic.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\GamePlay\Camera\ThirdPersonCameraController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
