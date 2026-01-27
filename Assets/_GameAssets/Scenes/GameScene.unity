@@ -677,6 +677,7 @@ GameObject:
   m_Component:
   - component: {fileID: 396564913}
   - component: {fileID: 396564916}
+  - component: {fileID: 396564917}
   - component: {fileID: 396564915}
   - component: {fileID: 396564914}
   m_Layer: 0
@@ -771,15 +772,29 @@ MonoBehaviour:
   _jumpKey: 32
   _jumpForce: 8
   _jumpCooldown: 0.5
+  _airMultiplier: 0.22
+  _airDrag: 0.75
   _canJump: 1
   _slideKey: 113
-  _slideMultiplier: 2
-  _slideDrag: 2
+  _slideMultiplier: 3
+  _slideDrag: 3
   _playerHeight: 1
   _groundLayer:
     serializedVersion: 2
     m_Bits: 64
   _groundDrag: 5
+--- !u!114 &396564917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396564912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c712623f973dbf4cab957b79e747610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
