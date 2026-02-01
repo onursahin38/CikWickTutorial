@@ -1,10 +1,14 @@
 using UnityEditor.Rendering;
 using UnityEngine;
+using System;
 
 public class PlayerController : MonoBehaviour
 
 
-{[Header("References")]
+{
+public event Action OnPlayerJumped; 
+    
+[Header("References")]
 [SerializeField] private Transform _orientationTransform;
 [Header("Movement Settings")]
 [SerializeField] private KeyCode _movementKey;
@@ -38,6 +42,7 @@ private Rigidbody _playerRigidbody;
 private float _horizontalInput , _verticalInput;
 private Vector3 _movementDirection;
 private bool _isSliding;
+    private int playerController_OnPlayerJumped;
 
     void Awake()
     {
@@ -48,7 +53,9 @@ private bool _isSliding;
        
     }
 
-   private void Update()
+   
+
+    private void Update()
     {
         SetInputs();
         SetStates();
@@ -169,6 +176,7 @@ private void SetPlayerMovement()
     private void SetPlayerJumping()
 
     {
+        OnPlayerJumped?.Invoke();  
         _playerRigidbody.linearVelocity = new Vector3 (_playerRigidbody.linearVelocity.x, 0f, _playerRigidbody.linearVelocity.z);
         _playerRigidbody.AddForce(transform.up *_jumpForce, ForceMode.Impulse);
     }

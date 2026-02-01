@@ -72,7 +72,9 @@
     <Compile Include="Assets\_GameAssets\Scripts\Enums\SoundType.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Audio\BackgroundMusic.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\GamePlay\Player\PlayerAnimationController.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\GamePlay\Camera\ThirdPersonCameraController.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Helpers\Consts.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
