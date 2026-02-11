@@ -80,6 +80,7 @@
     <Compile Include="Assets\_GameAssets\Scripts\GamePlay\Player\PlayerInteractionController.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Collectibles\Wheats\GoldWheatCollectible.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Collectibles\Wheats\HolyWheatCollectible.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\ScriptableObjects\WheatDesignSO.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
