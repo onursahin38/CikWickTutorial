@@ -13,6 +13,11 @@ public struct PlayerAnimations
         public const string IS_SLIDING_ACTIVE = "IsSlidingActive";
     }
 
+    public struct OtherAnimations
+    {
+        public const string IS_SPATULA_JUMPING = "IsSpatulaJumping";
+    }
+
 public struct WheatTypes
 
     {

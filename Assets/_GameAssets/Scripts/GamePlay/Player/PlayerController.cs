@@ -231,6 +231,11 @@ private void SetPlayerMovement()
         _jumpForce = _startingJumpForce;
     }
 
+    public Rigidbody GetPlayerRigidbody ()
+    {
+        return _playerRigidbody;
+    }
+
     #endregion
 
 }

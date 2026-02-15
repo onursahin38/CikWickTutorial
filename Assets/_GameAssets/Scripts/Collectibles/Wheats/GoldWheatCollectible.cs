@@ -3,7 +3,7 @@ using UnityEngine;
 public class GoldWheatCollectible : MonoBehaviour , ICollectible
 {
      [SerializeField] private WheatDesignSO _wheatDesignSO;
-[SerializeField] private PlayerController _playerController;
+    [SerializeField] private PlayerController _playerController;
 
 
 
