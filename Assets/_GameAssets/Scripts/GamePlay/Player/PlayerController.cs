@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 
 {
 public event Action OnPlayerJumped; 
+public event Action <PlayerState> OnPlayerStateChanged;
     
 [Header("References")]
 [SerializeField] private Transform _orientationTransform;
@@ -121,6 +122,7 @@ private bool _isSliding;
         if (newState != CurrentState)
         {
             _StateController.ChangeState(newState);
+            OnPlayerStateChanged?.Invoke(newState);
        }
        
     }

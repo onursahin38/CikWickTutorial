@@ -1,2 +1,15 @@
 fileFormatVersion: 2
 guid: c17a41ffa3c4be64da4dd0d006d8d430
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _activeSprite: {instanceID: 0}
+  - _passiveSprite: {instanceID: 0}
+  - _activeWheatSprite: {instanceID: 0}
+  - _passiveWheatSprite: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
