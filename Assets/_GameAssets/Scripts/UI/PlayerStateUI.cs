@@ -74,7 +74,7 @@ public Image GetRottenBoosterWheatImage => _rottenBoosterWheatImage;
 
            case PlayerState.SlideIdle:
            case PlayerState.Slide:
-                 SetStateUserInterfaces (_playerSlidingActiveSprite , _playerWalkingPassiveSprite,_playerSlidingTransform,_playerWalkingTransform);
+                 SetStateUserInterfaces (_playerWalkingPassiveSprite,_playerSlidingActiveSprite , _playerSlidingTransform,_playerWalkingTransform);
           
              break;
 

@@ -67,8 +67,10 @@
   <ItemGroup>
     <Compile Include="Assets\_GameAssets\Scripts\Audio\Sound.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Enums\PlayerState.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Managers\HealthManager.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\GamePlay\Player\PlayerController.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\GamePlay\Player\StateController.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\UI\PlayerHealtUI.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Enums\SoundType.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Audio\BackgroundMusic.cs" />
