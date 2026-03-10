@@ -85,6 +85,7 @@
     <Compile Include="Assets\_GameAssets\Scripts\Collectibles\Wheats\GoldWheatCollectible.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Collectibles\Wheats\HolyWheatCollectible.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\ScriptableObjects\WheatDesignSO.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\UI\TimerUI.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\UI\PlayerStateUI.cs" />
   </ItemGroup>
   <ItemGroup>
