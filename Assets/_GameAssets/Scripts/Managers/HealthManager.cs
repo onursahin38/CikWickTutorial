@@ -38,7 +38,7 @@ public class HealthManager : MonoBehaviour
             
             if(_currentHealth < _maxHealth)
         {
-            _currentHealth = Mathf.Min (_currentHealth + healAmount,_maxHealth);
+            _currentHealth = Mathf.Min   (_currentHealth + healAmount,_maxHealth);
         }
 
 

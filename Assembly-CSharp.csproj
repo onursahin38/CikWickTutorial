@@ -79,8 +79,11 @@
     <Compile Include="Assets\_GameAssets\Scripts\GamePlay\Camera\ThirdPersonCameraController.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Helpers\Consts.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Collectibles\ICollectible.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Managers\GameManager.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\UI\EggCounterUI.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Collectibles\Wheats\RottenWheatCollectible.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Boostables\SpatulaBooster.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\Collectibles\EggCollectible.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\GamePlay\Player\PlayerInteractionController.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Collectibles\Wheats\GoldWheatCollectible.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Collectibles\Wheats\HolyWheatCollectible.cs" />
