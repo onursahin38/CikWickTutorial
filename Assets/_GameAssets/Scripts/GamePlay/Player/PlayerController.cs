@@ -61,6 +61,14 @@ private bool _isSliding;
 
     private void Update()
     {
+
+        if (GameManager.Instance.GetCurrentGameState()!= GameState.Play
+        && GameManager.Instance.GetCurrentGameState() != GameState.Resume)
+        {
+            return;
+        }
+
+
         SetInputs();
         SetStates();
         SetPlayerDrag();
@@ -70,6 +78,14 @@ private bool _isSliding;
    private void FixedUpdate()
 
     {
+        if (GameManager.Instance.GetCurrentGameState()!= GameState.Play
+        && GameManager.Instance.GetCurrentGameState() != GameState.Resume)
+        {
+            return;
+        }
+
+
+
        SetPlayerMovement(); 
     }
     
