@@ -76,12 +76,15 @@
     <Compile Include="Assets\_GameAssets\Scripts\Audio\BackgroundMusic.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\GamePlay\Player\PlayerAnimationController.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Boostables\IBoostable.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\UI\Popups\LosePopup.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\GamePlay\Camera\ThirdPersonCameraController.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Helpers\Consts.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\UI\Popups\WinPopup.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Collectibles\ICollectible.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\UI\EggCounterUI.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Collectibles\Wheats\RottenWheatCollectible.cs" />
+    <Compile Include="Assets\_GameAssets\Scripts\UI\WinLoseUI.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Boostables\SpatulaBooster.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\Collectibles\EggCollectible.cs" />
     <Compile Include="Assets\_GameAssets\Scripts\GamePlay\Player\PlayerInteractionController.cs" />

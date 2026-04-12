@@ -3,7 +3,7 @@ using System.Collections;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class TimerUI : MonoBehaviour
 {   [Header ("References")]
     [SerializeField] private RectTransform _timerRotatableTransform;
@@ -16,6 +16,7 @@ public class TimerUI : MonoBehaviour
     private float _elapsedTime;
     private bool _isTimerRunning;
     private Tween _rotationTween;   
+    private string _finalTime;
 
     private void Start()
     {
@@ -30,13 +31,17 @@ public class TimerUI : MonoBehaviour
         {
                          
         case GameState.Pause:
-        PauseTimer();
+        StopTimer();
         break;
 
         case GameState.Resume:
         ResumeTimer();
         
         break;
+         case GameState.GameOver:
+         FinishTimer();
+         break;
+         
 
          } 
     }
@@ -57,7 +62,7 @@ public class TimerUI : MonoBehaviour
     }
 
 
-        private void PauseTimer ()
+        private void StopTimer ()
     {
         _isTimerRunning = false;
         CancelInvoke(nameof(UpdateTimerUI));
@@ -78,7 +83,21 @@ public class TimerUI : MonoBehaviour
         
 
     }
-      
+
+    private void FinishTimer()
+    {
+        StopTimer();
+       _finalTime = GetFormattedElapsedTime();    
+    }
+    private string GetFormattedElapsedTime()
+    {
+        int minutes = Mathf.FloorToInt (_elapsedTime / 60f);
+        int seconds = Mathf.FloorToInt (_elapsedTime % 60f);
+        return string .Format("{0:00}:{1:00}",minutes,seconds); 
+    }
+
+    
+    
           private void UpdateTimerUI ()
 
     {   
@@ -93,6 +112,9 @@ public class TimerUI : MonoBehaviour
 
     }
 
-
+public string GetFinalTime()
+    {
+        return _finalTime;
+    }
 
 }

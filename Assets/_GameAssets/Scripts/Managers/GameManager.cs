@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public event Action<GameState> OnGameStateChanged;
 
 [Header("References")]
 [SerializeField] private EggCounterUI _eggCounterUI;
+[SerializeField] private WinLoseUI _winLoseUI;
 
 [Header("Settings")]
 [SerializeField] private int _maxEggCount = 5;
@@ -41,9 +43,10 @@ private GameState _currentGameState;
 
     if (_currentEggCount == _maxEggCount)
     {
-        Debug.Log("Game Win!"); 
+        //WIN
         _eggCounterUI.SetEggCompleted();
         ChangeGameState(GameState.GameOver);
+        _winLoseUI.OnGameWin();
     }
 
     Debug.Log("Egg Count:" + _currentEggCount);
